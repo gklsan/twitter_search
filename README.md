@@ -1,24 +1,6 @@
-# README
+# TWITTER SEARCH
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Create new rails application
 
-Things you may want to cover:
+    rails new twitter_search -skip-keeps-skip-active-storage-skip-action-cable-skip-active-record-T-skip-active-job-skip-action-text
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
