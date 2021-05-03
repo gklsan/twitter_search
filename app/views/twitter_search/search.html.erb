@@ -1,2 +1,16 @@
-<h1>TwitterSearch#search</h1>
-<p>Find me in app/views/twitter_search/search.html.erb</p>
+<div class="container">
+    <%= link_to 'Go to Home', root_path %>
+    <h1 align="center">Twitter Search </h1>
+    <div class="row">    
+        <div class="col-xs-8 col-xs-offset-2 col-12">
+            <div class="">
+                <%= form_tag search_path, class: "form-inline" do %>
+                    <div class="form-group">
+                        <%= text_field_tag :seach_text, "", class: "form-control", placeholder: "Search term..." %>
+                        <%= submit_tag " SEARCH ", class: "btn btn-default glyphicon glyphicon-search" %>
+                    </div>
+                <% end %>
+            </div>
+        </div>
+    </div>
+</div>    
