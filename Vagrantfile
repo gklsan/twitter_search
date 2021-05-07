@@ -12,10 +12,11 @@ Vagrant.configure("2") do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
-  config.vm.box = "tech_tips_blog"
-
-  config.vm.synced_folder "/", "/workplace/"
-
+  config.vm.box = "base.box"
+  config.vm.provider "virtualbox" do |v|
+    v.name = "base_vagrant"
+  end
+  config.vm.synced_folder "../", "/workplace/"
   config.vm.network :private_network, ip: '192.168.211.39'
 
   # Disable automatic box update checking. If you disable this, then
